@@ -1,0 +1,18 @@
+{
+  "name": "telegraf-template",
+  "version": "1.0.0",
+  "scripts": {
+    "lint_win": "node_modules\\.bin\\eslint .",
+    "lint": "./node_modules/.bin/eslint ."
+  },
+  "dependencies": {
+    "canvas": "^2.6.1",
+    "chalk": "^3.0.0",
+    "chunk": "0.0.2",
+    "js-yaml": "^3.13.1",
+    "mongoose": "^5.9.7",
+    "nanoid": "^2.0.4",
+    "telegraf": "^3.38.0",
+    "winston": "^3.2.1"
+  }
+}
