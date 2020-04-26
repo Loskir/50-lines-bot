@@ -56,7 +56,7 @@ composer.on('photo', async (ctx) => {
     let l = 0
 
     for (let x = 0; x < imageWidth; ++x) {
-      const c = pix[((y * imageHeight / 50) * imageWidth + x) * 4]
+      const c = pix[((y * imageHeight / 50 + 6) * imageWidth + x) * 4]
 
       l += (255 - c) / 255
 
