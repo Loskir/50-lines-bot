@@ -5,4 +5,5 @@
 
 Telegram: [@Lines50Bot](https://tttttt.me/Lines50Bot)
 
-[Web version](https://loskir.github.io/50-lines)
+See also: [Web version](https://loskir.github.io/50-lines), [Realtime webcam version](https://loskir.github.io/50-lines-webcam)
+
