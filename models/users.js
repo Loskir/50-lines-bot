@@ -14,7 +14,7 @@ const users = new mongoose.Schema({
 
   is_disabled: {
     type: Boolean,
-    default: true
+    default: false,
   },
 
   created_at: Date,
