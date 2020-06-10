@@ -17,6 +17,8 @@ const users = new mongoose.Schema({
     default: false,
   },
 
+  last_activity_at: Date,
+
   created_at: Date,
   updated_at: Date,
 })

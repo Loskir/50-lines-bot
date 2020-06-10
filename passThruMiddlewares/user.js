@@ -31,7 +31,7 @@ module.exports = async (ctx, next) => {
       user = await Users.create(params)
     } else {
       Object.assign(user, params, {
-        is_deactivated: false,
+        is_disabled: false,
         last_activity_at: new Date(),
       })
       user = await user.save()
