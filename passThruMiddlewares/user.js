@@ -21,10 +21,10 @@ module.exports = async (ctx, next) => {
 
     if (!user) {
       // ctx.mixpanel.track('New user')
-      log.info('new user')
+      log.info(`new user ${ctx.from.id} ${Utils.getUserString(ctx.from)}`)
 
-      await ctx.telegram.sendMessage(89307233, `New user: ${Utils.getUserString(ctx.from)}`)
-        .catch(console.error)
+      // await ctx.telegram.sendMessage(89307233, `New user: ${Utils.getUserString(ctx.from)}`)
+      //   .catch(console.error)
 
       ctx.state.is_new_user = true
 

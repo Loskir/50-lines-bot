@@ -2,6 +2,8 @@ const {Composer} = require('telegraf')
 
 const Results = require('../models/results')
 
+const log = require('../core/logs')
+
 const composer = new Composer()
 composer.start((ctx) => {
   return ctx.replyWithPhoto({source: './demo.png'}, {
@@ -22,6 +24,7 @@ composer.on('photo', async (ctx) => {
     user_id: ctx.from.id,
     file_id: ctx.message.photo[ctx.message.photo.length - 1].file_id,
   })
+  log.info(`${ctx.from.id}: new result`)
   return ctx.reply(`Я положил твою картинку в очередь. Картинок перед тобой: ${queueSize}. Пожалуйста, подожди немного`)
 })
 
