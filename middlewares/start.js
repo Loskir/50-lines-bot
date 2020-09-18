@@ -25,6 +25,9 @@ composer.on('photo', async (ctx) => {
     file_id: ctx.message.photo[ctx.message.photo.length - 1].file_id,
   })
   log.info(`${ctx.from.id}: new result`)
+  if (queueSize === 0) {
+    return ctx.reply(`Я начал обрабатывать твою картинку. Пожалуйста, подожди немного`)
+  }
   return ctx.reply(`Я положил твою картинку в очередь. Картинок перед тобой: ${queueSize}. Пожалуйста, подожди немного`)
 })
 
