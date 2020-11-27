@@ -28,10 +28,9 @@ composer.on('photo', async (ctx) => {
     return log.info(`${ctx.from.id}: new result (silent)`)
   }
   log.info(`${ctx.from.id}: new result`)
-  if (queueSize === 0) {
-    return ctx.reply(`Я начал обрабатывать твою картинку. Пожалуйста, подожди немного`)
+  if (queueSize > 0) {
+    return ctx.reply(`Я положил твою картинку в очередь. Картинок перед тобой: ${queueSize}. Пожалуйста, подожди немного`)
   }
-  return ctx.reply(`Я положил твою картинку в очередь. Картинок перед тобой: ${queueSize}. Пожалуйста, подожди немного`)
 })
 
 module.exports = composer
