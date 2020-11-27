@@ -24,6 +24,9 @@ composer.on('photo', async (ctx) => {
     user_id: ctx.from.id,
     file_id: ctx.message.photo[ctx.message.photo.length - 1].file_id,
   })
+  if (ctx.message.caption === '/silent') {
+    return log.info(`${ctx.from.id}: new result (silent)`)
+  }
   log.info(`${ctx.from.id}: new result`)
   if (queueSize === 0) {
     return ctx.reply(`Я начал обрабатывать твою картинку. Пожалуйста, подожди немного`)
