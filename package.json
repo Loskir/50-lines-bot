@@ -11,7 +11,7 @@
     "chunk": "0.0.2",
     "js-yaml": "^3.13.1",
     "mongoose": "^5.9.7",
-    "nanoid": "^2.0.4",
+    "nanoid": "^3.1.31",
     "telegraf": "^3.38.0",
     "winston": "^3.2.1"
   }
