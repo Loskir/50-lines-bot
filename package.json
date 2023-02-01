@@ -10,7 +10,7 @@
     "chalk": "^3.0.0",
     "chunk": "0.0.2",
     "js-yaml": "^3.13.1",
-    "mongoose": "^5.9.7",
+    "mongoose": "^5.13.15",
     "nanoid": "^2.0.4",
     "telegraf": "^3.38.0",
     "winston": "^3.2.1"
